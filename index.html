@@ -861,6 +861,31 @@
           user_agent: navigator.userAgent
         });
 
+        // Enviar dados para webhook
+        fetch('https://webhook.atlassolutions.cloud/webhook/mql-naoseioq', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            nome: nome,
+            whatsapp: whatsapp,
+            restaurante: restaurante,
+            faturamento: faturamento,
+            location: {
+              ip: userLocation.ip || null,
+              city: userLocation.city || null,
+              region: userLocation.region || null,
+              country: userLocation.country || null
+            },
+            facebook: {
+              fbc: fbc || null,
+              fbp: fbp || null
+            },
+            page_url: window.location.href,
+            page_referrer: document.referrer || null,
+            user_agent: navigator.userAgent
+          })
+        });
+
         // Exibir modal de sucesso
         var modal = document.getElementById('modal-sucesso');
         if (modal) modal.classList.add('ativo');
