@@ -172,70 +172,82 @@
   <section class="dor" id="dor">
     <div class="wrap">
 
-      <!-- Eyebrow -->
-      <p class="dor__eyebrow reveal">Isso soa familiar?</p>
-
-      <!-- Headline da dobra -->
       <h2 class="dor__headline reveal">
-        Você não está perdendo dinheiro por falta de esforço.
+        Você não está perdendo <span class="dor__headline--gold">dinheiro</span> por falta de esforço.
         <span class="dor__headline--sub">Está perdendo porque ninguém te mostrou para onde ele está indo.</span>
       </h2>
 
-      <!-- Bloco 1: O problema -->
-      <div class="dor__bloco1">
-        <div class="dor__bloco-num">1</div>
-        <div class="dor__bloco-body">
-          <h3 class="dor__bloco-title">O problema</h3>
-          <div class="dor__checks">
-            <p><span class="check-green">✓</span> Salão cheio &nbsp;<span class="check-green">✓</span> Delivery rodando
-              &nbsp;<span class="check-green">✓</span> Trabalhando muito</p>
+      <div class="dor__cards-wrap">
+
+        <div class="dor__card dor__card--problema reveal">
+          <div class="dor__card-badge">Situação atual</div>
+          <div class="dor__card-items">
+            <div class="dor__card-item dor__card-item--green">
+              <i class="ico">✓</i><span>Salão <strong>cheio</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--green">
+              <i class="ico">✓</i><span>Delivery <strong>rodando</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--green">
+              <i class="ico">✓</i><span>Muito <strong>trabalho</strong></span>
+            </div>
           </div>
-          <p class="dor__bloco-text">Mas no final do mês o caixa não reflete o movimento.</p>
-          <div class="dor__negatives">
-            <p><span class="x-red">✕</span> A planilha é bagunçada</p>
-            <p><span class="x-red">✕</span> O sistema gera relatório que ninguém entende</p>
+          <p class="dor__card-text">Mas no final do mês o caixa <strong>não reflete</strong> o movimento.</p>
+          <div class="dor__card-items">
+            <div class="dor__card-item dor__card-item--red">
+              <i class="ico ico--red">✕</i><span>A planilha é bagunçada</span>
+            </div>
+            <div class="dor__card-item dor__card-item--red">
+              <i class="ico ico--red">✕</i><span>O sistema gera relatório que ninguém entende</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Bloco 2: Enquanto isso -->
-      <div class="dor__bloco reveal">
-        <div class="dor__bloco-num">2</div>
-        <div class="dor__bloco-body">
-          <h3 class="dor__bloco-title">Enquanto isso</h3>
-          <div class="dor__questions">
-            <p><span class="q-mark">?</span> Quanto posso investir no próximo mês?</p>
-            <p><span class="q-mark">?</span> Contratar mais um funcionário ou cortar?</p>
-            <p><span class="q-mark">?</span> Posso abrir uma segunda unidade?</p>
+        <div class="dor__card dor__card--cinza reveal">
+          <div class="dor__card-badge">Enquanto isso</div>
+          <div class="dor__card-items">
+            <div class="dor__card-item dor__card-item--dark">
+              <i class="ico ico--gray">→</i><span>Quanto <strong>posso investir</strong> no próximo mês?</span>
+            </div>
+            <div class="dor__card-item dor__card-item--dark">
+              <i class="ico ico--gray">→</i><span><strong>Contratar</strong> mais um funcionário ou <strong>cortar</strong>?</span>
+            </div>
+            <div class="dor__card-item dor__card-item--dark">
+              <i class="ico ico--gray">→</i><span>Posso abrir uma <strong>segunda unidade</strong>?</span>
+            </div>
           </div>
-          <p class="dor__bloco-text">Você responde no achismo — porque não tem outra opção.</p>
-          <p class="dor__bloco-text">E o financeiro vai para casa com você.</p>
-          <div class="dor__consequencias">
-            <span>— Conversas que não deveriam acontecer</span>
-            <span>— Noites mal dormidas</span>
-            <span>— Finais de semana que deveriam ser de descanso</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bloco 3: A virada -->
-      <div class="dor__bloco dor__bloco--virada reveal">
-        <div class="dor__bloco-num">3</div>
-        <div class="dor__bloco-body">
-          <h3 class="dor__bloco-title">A virada</h3>
-          <p class="dor__bloco-text dor__bloco-text--big">
-            A Voxel faz o que planilha e sistema nunca fizeram —<br>
-            <strong>te mostra exatamente para onde vai cada real</strong>
-          </p>
-          <div class="dor__virada-checks">
-            <p><span class="check-gold">✓</span> Você começa a crescer com segurança</p>
-            <p><span class="check-gold">✓</span> Toma decisões com dados reais</p>
-            <p><span class="check-gold">✓</span> Para de adivinhar</p>
+          <p class="dor__card-text">Você responde no achismo — porque não tem outra opção.</p>
+          <div class="dor__card-items">
+            <div class="dor__card-item dor__card-item--ghost">
+              <i class="ico">✕</i><span>Conversas que <strong>não deveriam acontecer</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--ghost">
+              <i class="ico">✕</i><span>Noites <strong>mal dormidas</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--ghost">
+              <i class="ico">✕</i><span>Finais de semana que <strong>deveriam ser de descanso</strong></span>
+            </div>
           </div>
         </div>
+
+        <div class="dor__card dor__card--virada reveal">
+          <div class="dor__card-badge dor__card-badge--green">A Virada</div>
+          <p class="dor__card-text--virada">A <strong>Voxel</strong> faz o que planilha e sistema nunca fizeram — te mostra exatamente para onde vai cada real.</p>
+          <div class="dor__card-items">
+            <div class="dor__card-item dor__card-item--gold">
+              <i class="ico">✓</i><span>Você começa a crescer <strong>com segurança</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--gold">
+              <i class="ico">✓</i><span>Toma decisões com <strong>dados reais</strong></span>
+            </div>
+            <div class="dor__card-item dor__card-item--gold">
+              <i class="ico">✓</i><span>Para de <strong>adivinhar</strong></span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- CTA da dobra 2 -->
       <div class="dor__cta-wrap reveal">
         <a href="#formulario" class="cta-gold">Quero ter Clareza nos meus números →</a>
       </div>
